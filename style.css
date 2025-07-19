@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+
+body {
+  background-color: #f9f9f9;
+  margin: 0px ;
+  word-spacing: 1px;
+  padding: 0;
+  
+}
+
+header {
+  background-color: #e63946;
+  padding: 30px;
+  text-align: center;
+}
+
+ h1 {
+   color: #fff;;
+   margin-bottom: 20px;
+
+}
+
+nav a {
+  color: white;
+  text-decoration: none; /*Removes underline*/
+  border: 2px solid white;
+  border-radius: 8px;
+  background-color:  transparent;
+  margin:  8px;
+  transition: 0.3s;
+  padding: 5px;
+}
+
+nav a:hover {
+  background-color: rgb(250, 249, 249);
+  color: #e63946;
+}
+
+/* Apply style directly to <section> */
+/* Reset body */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Section styles */
+section {
+  position: relative;
+  padding: 40px;
+  text-align: center;
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  /* 🎯 Set the long background image */
+ background-image: url('index_emergency_1.jpg');  /* combine 3 images side by side */
+  background-repeat: repeat-x;                /* repeat horizontally */
+  background-size: contain;                   /* full height, actual width */
+  background-position: 0 0;
+
+  animation: scrollBackground 30s linear infinite;
+}
+
+/* 🌀 Scroll background from left to right */
+@keyframes scrollBackground {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 0;
+  }
+}
+
+/* Optional button styling */
+button {
+  background-color: #032a5e;
+  color: white;
+  padding: 12px 24px;
+  font-size: 1em;
+  border: none;
+  border-radius: 8px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #457b9d;
+}
+
+
+section h2,
+section p,
+section a {
+  position: relative;
+  z-index: 1;/*text is above background -1,0,+1*/
+  padding: 8px;
+  color:#032a5e;
+}
+
+/* Button */
+button {
+  background-color: #032a5e;
+  color: white;
+  padding: 12px 24px;
+  font-size: 1em;
+  border-radius: 8px;
+  border: none;
+  transition: 0.3s;
+    
+
+}
+
+button:hover {
+  background-color: #457b9d;
+  cursor: pointer;
+    z-index: 1;
+
+}
+
+
+
+footer {
+  background-color: #e63946;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
